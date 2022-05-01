@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><span>B</span><span>ath</span><span>A</span><span>pp</span></h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero-container">
+            <div class="bathInput">
+                <label for="bath-date">Set Bath date</label>
+                <input type="datetime-local" name="date" id="bath-date" placeholder="2 May, 2022">
+            </div>
+            <div>
+                <button onclick="countdown()">Submit</button>
+            </div>
+            <div class="bathCountdown">
+                <h2>Countdown To Bath time</h2>
+                <div class="countdown-container">
+                    <div class="count">
+                        <div id="days">00</div>
+                        <span>Days</span>
+                    </div>
+                    <div class="count">
+                        <div id="hours">00</div>
+                        <span>Hours</span>
+                    </div>
+                    <div class="count">
+                        <div id="minutes">00</div>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="count">
+                        <div id="seconds">00</div>
+                        <span>Seconds</span>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container" id="update">
+            <p>Kindly do your best to bath twice a day</p>
+        </div>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
